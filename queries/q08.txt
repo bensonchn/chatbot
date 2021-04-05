@@ -1,0 +1,25 @@
+PREFIX concc: <http://concc.io/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX vivo: <http://vivoweb.org/ontology/core#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?courseLabel
+WHERE {
+  {
+    SELECT ?course (COUNT(DISTINCT ?material) as ?count) # get course + num in nested query so the count can be stripped off in the parent query
+    WHERE 
+    {
+      ?course concc:offeredAt concc:Concordia_University. # select uni
+      ?event (concc:lectureFor|concc:tutorialFor|concc:labFor)* ?course. # get all courses and their events as ?event
+      OPTIONAL {
+      ?material concc:lectureMaterialFor|concc:materialFor ?event.	# all material for a course
+      }
+    }
+    GROUP BY ?course
+    ORDER BY DESC(?count)
+  }
+  ?course rdfs:label ?courseLabel.
+}
+LIMIT 1

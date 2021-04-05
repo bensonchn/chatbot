@@ -1,0 +1,17 @@
+PREFIX concc: <http://concc.io/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX vivo: <http://vivoweb.org/ontology/core#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+select distinct ?courseLabel
+WHERE{
+  ?course     # select a university
+    concc:offeredAt concc:Concordia_University;
+    rdfs:label ?courseLabel;
+  .
+  ?event (concc:lectureFor|concc:tutorialFor|concc:labFor)* ?course. # get all the events(including the course)
+  ?event concc:courseTopic|concc:labTopic|concc:lectureTopic|concc:tutorialTopic ?topic # get all topics for course
+  FILTER (?topic = concc:Authentication) 	# select a topic
+}
