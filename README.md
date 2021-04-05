@@ -1,5 +1,5 @@
 # COMP 474 Project
-
+**Related technologies: RDF, RDFS W3C technologies, NLP, Artificial Intelligence (AI)** 
 ## What does it do?
 This is the first of two project assignments in our course. Note that the assignments are not ‘stand-alone’,
 but rather build on top of each other to form a bigger project.
