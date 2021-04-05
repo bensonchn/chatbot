@@ -1,0 +1,325 @@
+@prefix concc: <http://concc.io/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dbp: <http://dbpedia.org/resource/> .
+
+
+# defining our custom data
+concc:Artificial_intelligence
+   a concc:Topic;
+   rdfs:label "Artificial_intelligence"@en;
+   rdfs:comment "Called machine intelligence,demonstrated by machines and displayed by  humans."@en;
+   rdfs:seeAlso dbp:Artificial_intelligence
+.
+
+concc:Text_Mining
+   a concc:Topic;
+   rdfs:label "Text_Mining"@en;
+   rdfs:comment "Text mining is the discovery by computer of new, previously unknown information by automatically extracting information from different written resources."@en;
+   rdfs:seeAlso dbp:Text_Mining
+.
+
+concc:Intelligent_agent
+   a concc:Topic;
+   rdfs:label "Intelligent_agent"@en;
+   rdfs:comment "refers to an autonomous entity which acts, directing its activity towards achieving goals, upon an environment using observation through sensors and consequent actuators."@en;
+   rdfs:seeAlso dbp:Intelligent_agent
+.
+
+concc:Knowledge_graph
+   a concc:Topic;
+   rdfs:label "Knowledge_graph"@en;
+   rdfs:comment "A knowledge graph is a knowledge base that uses a graph-structured data model or topology to integrate knowledge and data."@en;
+   rdfs:seeAlso dbp:Knowledge_graph
+.
+
+concc:Resource_Description_Framework
+   a concc:Topic;
+   rdfs:label "Resource Description Framework"@en;
+   rdfs:comment "The Resource Description Framework (RDF) is a family of World Wide Web Consortium (W3C) specifications originally designed as a metadata data model. "@en;
+   rdfs:seeAlso dbp:Resource_Description_Framework
+.
+
+concc:Data_integration
+   a concc:Topic;
+   rdfs:label "Data_integration"@en;
+   rdfs:comment "Data integration involves combining data residing in different sources and providing users with a unified view of them. "@en;
+   rdfs:seeAlso dbp:Data_integration
+.
+
+concc:RDF_Schema
+   a concc:Topic;
+   rdfs:label "RDF Schema"@en;
+   rdfs:comment "RDF Schema (Resource Description Framework Schema, variously abbreviated as RDFS, RDF(S), RDF-S, or RDF/S) is a set of classes with certain properties using the RDF extensible knowledge representation data model, providing basic elements for the description of ontologies, otherwise called RDF vocabularies, intended to structure RDF resources. "@en;
+   rdfs:seeAlso dbp:RDF_Schema
+.
+
+concc:SPARQL
+   a concc:Topic;
+   rdfs:label "SPARQL"@en;
+   rdfs:comment "is an RDF query language—that is, a semantic query language for databases—able to retrieve and manipulate data stored in Resource Description Framework (RDF) format."@en;
+   rdfs:seeAlso dbp:SPARQL
+.
+
+concc:Web_Ontology_Language
+   a concc:Topic;
+   rdfs:label "Web_Ontology_Language"@en;
+   rdfs:comment "is a family of knowledge representation languages for authoring ontologies."@en;
+   rdfs:seeAlso dbp:Web_Ontology_Language
+.
+
+concc:Query_language
+   a concc:Topic;
+   rdfs:label "Query_language"@en;
+   rdfs:comment "Query languages or data query languages (DQLs) are computer languages used to make queries in databases and information systems."@en;
+   rdfs:seeAlso dbp:Query_language
+.
+
+concc:Linked_data
+   a concc:Topic;
+   rdfs:label "Linked data"@en;
+   rdfs:comment "In computing, linked data (often capitalized as Linked Data) is structured data which is interlinked with other data so it becomes more useful through semantic queries."@en;
+   rdfs:seeAlso dbp:Linked_data
+.
+
+concc:Knowledge_base
+   a concc:Topic;
+   rdfs:label "Knowledge base"@en;
+   rdfs:comment "A knowledge base (KB) is a technology used to store complex structured and unstructured information used by a computer system. "@en;
+   rdfs:seeAlso dbp:Knowledge_base
+.
+
+concc:User_modeling
+   a concc:Topic;
+   rdfs:label "User modeling"@en;
+   rdfs:comment "User modeling is the subdivision of human–computer interaction which describes the process of building up and modifying a conceptual understanding of the user. "@en;
+   rdfs:seeAlso dbp:User_modeling
+.
+
+concc:Collaborative_filtering
+   a concc:Topic;
+   rdfs:label "Collaborative filtering"@en;
+   rdfs:comment "Collaborative filtering (CF) is a technique used by recommender systems. Collaborative filtering has two senses, a narrow one and a more general one. In the newer, narrower sense, collaborative filtering is a method of making automatic predictions (filtering) about the interests of a user by collecting preferences or taste information from many users (collaborating). "@en;
+   rdfs:seeAlso dbp:Collaborative_filtering
+.
+
+concc:Recommender_system
+   a concc:Topic;
+   rdfs:label "Recommender system"@en;
+   rdfs:comment "A recommender system or a recommendation system (sometimes replacing system with a synonym such as platform or engine) is a subclass of information filtering system that seeks to predict the rating or preference a user would give to an item. They are primarily used in commercial applications."@en;
+   rdfs:seeAlso dbp:Recommender_system
+.
+
+concc:Vector_space_model
+   a concc:Topic;
+   rdfs:label "Vector space model"@en;
+   rdfs:comment "Vector space model or term vector model is an algebraic model for representing text documents (and any objects, in general) as vectors of identifiers, such as, for example, index terms."@en;
+   rdfs:seeAlso dbp:Vector_space_model
+.
+
+concc:Machine_learning
+   a concc:Topic;
+   rdfs:label "Machine_learning"@en;
+   rdfs:comment "Machine learning (ML) is the study of computer algorithms that improve automatically through experience. It is seen as a subset of artificial intelligence. "@en;
+   rdfs:seeAlso dbp:Machine_learning
+.
+
+concc:K-means_clustering
+   a concc:Topic;
+   rdfs:label "K-means_clustering"@en;
+   rdfs:comment "k-means clustering is a method of vector quantization, originally from signal processing, that aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean (cluster centers or cluster centroid), serving as a prototype of the cluster. "@en;
+   rdfs:seeAlso dbp:K-means_clustering
+.
+
+concc:K-nearest_neighbors_algorithm
+   a concc:Topic;
+   rdfs:label "K-nearest_neighbors_algorithm"@en;
+   rdfs:comment "In pattern recognition, the k-nearest neighbors algorithm (k-NN) is a non-parametric method proposed by Thomas Cover used for classification and regression. In both cases, the input consists of the k closest training examples in the feature space. "@en;
+   rdfs:seeAlso dbp:K-nearest_neighbors_algorithm
+.
+
+concc:NPL
+   a concc:Topic;
+   rdfs:label "NPL (programming language)"@en;
+   rdfs:comment "NPL is a functional programming language with pattern matching designed by Rod Burstall and John Darlington in 1977."@en;
+   rdfs:seeAlso dbp:NPL_programming_language
+.
+
+concc:Chatbot
+   a concc:Topic;
+   rdfs:label "Chatbot"@en;
+   rdfs:comment "A chatbot is a software application used to conduct an on-line chat conversation via text or text-to-speech, in lieu of providing direct contact with a live human agent."@en;
+   rdfs:seeAlso dbp:Chatbot
+.
+
+concc:Natural_language_processing
+   a concc:Topic;
+   rdfs:label "Natural language processing"@en;
+   rdfs:comment "Natural language processing (NLP) is a subfield of linguistics, computer science, information engineering, and artificial intelligence concerned with the interactions between computers and human (natural) languages, in particular how to program computers to process and analyze large amounts of natural language data."@en;
+   rdfs:seeAlso dbp:Natural_language_processing
+.
+
+concc:comp_474_lec_1
+   a concc:Lecture ;
+   concc:lectureFor concc:COMP_474_course;
+   rdfs:label "Lecture 1"@en;
+   concc:lectureTopic concc:Artificial_intelligence;
+   concc:lectureTopic concc:Text_mining;
+   concc:lectureTopic concc:Knowledge_graph;
+   concc:lectureTopic concc:Intelligent_agent;
+   concc:hasLab concc:comp_474_lab_1;
+   concc:lectureNumber 1;
+.
+
+concc:comp_474_lab_1
+   a concc:Lab ;
+   concc:labFor concc:comp_474_lec_1;
+   rdfs:label "Lab 1"@en;
+   concc:lectureNumber 1;
+.
+
+concc:comp_474_lec_2
+   a concc:Lecture ;
+   concc:lectureFor concc:COMP_474_course;
+   rdfs:label "Lecture 2"@en;
+   concc:lectureTopic concc:Knowledge_graph;
+   concc:lectureTopic concc:Resource_Description_Framework;
+   concc:lectureTopic concc:Data_integration;
+   concc:lectureTopic concc:Intelligent_agent;
+   concc:hasLab concc:comp_474_lab_2;
+   concc:lectureNumber 2;
+.
+
+concc:comp_474_lab_2
+   a concc:Lab ;
+   concc:labFor concc:comp_474_lec_2;
+   rdfs:label "Lab 2"@en;
+   concc:labTopic concc:RDF;
+   concc:labTopic concc:RDFlib;
+   concc:lectureNumber 2;
+.
+
+concc:comp_474_lec_3
+   a concc:Lecture ;
+   concc:lectureFor concc:COMP_474_course;
+   rdfs:label "Lecture 3"@en;
+   concc:lectureTopic concc:RDF_Schema;
+   concc:hasLab concc:comp_474_lab_3;
+   concc:lectureNumber 3;
+.
+
+concc:comp_474_lab_3
+   a concc:Lab ;
+   concc:labFor concc:comp_474_lec_3;
+   rdfs:label "Lab 3"@en;
+   concc:labTopic concc:FOAF;
+   concc:labTopic concc:RDFS;
+   concc:labTopic concc:Intelligent_agent;
+   concc:lectureNumber 3;
+.
+
+concc:comp_474_lec_4
+   a concc:Lecture ;
+   concc:lectureFor concc:COMP_474_course;
+   rdfs:label "Lecture 4"@en;
+   concc:lectureTopic concc:RDF_Schema;
+   concc:lectureTopic concc:SPARQL;
+   concc:lectureTopic concc:Web_Ontology_Language;
+   concc:lectureTopic concc:Query_language;
+   concc:hasLab concc:comp_474_lab_4;
+   concc:lectureNumber 4;
+.
+
+concc:comp_474_lab_4
+   a concc:Lab ;
+   concc:labFor concc:comp_474_lec_4;
+   rdfs:label "Lab 4"@en;
+   concc:labTopic concc:SPARQL;
+   concc:lectureNumber 4;
+.
+
+concc:comp_474_lec_5
+   a concc:Lecture ;
+   concc:lectureFor concc:COMP_474_course;
+   rdfs:label "Lecture 5"@en;
+   concc:lectureTopic concc:Linked_data;
+   concc:lectureTopic concc:Knowledge_base;
+   concc:hasLab concc:comp_474_lab_5;
+   concc:lectureNumber 5;
+.
+
+concc:comp_474_lab_5
+   a concc:Lab ;
+   concc:labFor concc:comp_474_lec_5;
+   rdfs:label "Lab 5"@en;
+   concc:labTopic concc:Linked_data;
+   concc:lectureNumber 5;
+.
+
+concc:comp_474_lec_6
+   a concc:Lecture ;
+   concc:lectureFor concc:COMP_474_course;
+   rdfs:label "Lecture 6"@en;
+   concc:lectureTopic concc:User_modeling;
+   concc:lectureTopic concc:Collaborative_filtering;
+   concc:lectureTopic concc:Recommender_system;
+   concc:lectureTopic concc:Vector_space_model;
+   concc:hasLab concc:comp_474_lab_6;
+   concc:lectureNumber 6;
+.
+
+concc:comp_474_lab_6
+   a concc:Lab ;
+   concc:labFor concc:comp_474_lec_6;
+   rdfs:label "Lab 6"@en;
+   concc:labTopic concc:Recommender_system;
+   concc:lectureNumber 6;
+.
+
+concc:comp_474_lec_7
+   a concc:Lecture ;
+   concc:lectureFor concc:COMP_474_course;
+   rdfs:label "Lecture 7"@en;
+   concc:lectureTopic concc:Machine_learning;
+   concc:lectureTopic concc:K-means_clustering;
+   concc:lectureTopic concc:K-nearest_neighbors_algorithm;
+   concc:hasLab concc:comp_474_lab_7;
+   concc:lectureNumber 7;
+.
+
+concc:comp_474_lab_7
+   a concc:Lab ;
+   concc:labFor concc:comp_474_lec_7;
+   rdfs:label "Lab 7"@en;
+   concc:labTopic concc:K-means_clustering;
+   concc:lectureNumber 7;
+.
+
+concc:comp_474_lec_8
+   a concc:Lecture ;
+   concc:lectureFor concc:COMP_474_course;
+   rdfs:label "Lecture 8"@en;
+   concc:lectureTopic concc:Chatbot;
+   concc:hasLab concc:comp_474_lab_9;
+   concc:lectureNumber 8;
+.
+
+concc:comp_474_lab_8
+   a concc:Lab ;
+   concc:labFor concc:comp_474_lec_9;
+   rdfs:label "Lab 8"@en;
+   concc:labTopic concc:K-nearest_neighbors_algorithm;
+   concc:lectureNumber 8;
+.
+
+concc:comp_474_lec_9
+   a concc:Lecture ;
+   concc:lectureFor concc:COMP_474_course;
+   rdfs:label "Lecture 9"@en;
+   concc:lectureTopic concc:Text_mining;
+   concc:lectureTopic concc:Natural_language_processing ;
+   concc:lectureNumber 9;
+.
